@@ -6,16 +6,18 @@ with open('README.md') as f:
 setup(
     name="gutenberg_cleaner",
     install_requires=['nltk'],
-    version='0.0.1',
+    version='0.1.3',
     description="cleans gutenberg dataset books",
     author_email='mohsenikiasari@ce.sharif.edu',
-    py_modules=["gutenbergـcleaner"],
+    packages=["_cleaning_options"],
+    py_modules=["gutenberg_cleaner"],
+    url="https://github.com/kiasar/gutenberg_cleaner",
     license='MIT',
     long_description=long_description,
     classifiers=[
-        "Programming language :: Python :: 3",
-        "Programming language :: Python :: 3.6",
-        "Programming language :: Python :: 3.7",
-        "Operation System :: OS Independent"
-    ]
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Operating System :: OS Independent",
+    ],
 )

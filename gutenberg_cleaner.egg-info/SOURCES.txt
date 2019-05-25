@@ -1,5 +1,10 @@
 README.md
+gutenberg_cleaner.py
 setup.py
+_cleaning_options/__init__.py
+_cleaning_options/cleaner.py
+_cleaning_options/cleaning_options.py
+_cleaning_options/strip_headers.py
 gutenberg_cleaner.egg-info/PKG-INFO
 gutenberg_cleaner.egg-info/SOURCES.txt
 gutenberg_cleaner.egg-info/dependency_links.txt

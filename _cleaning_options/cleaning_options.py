@@ -9,7 +9,7 @@ starts_with_regex = re.compile('^[%_<>*]')  # If the text is started with these,
 image_formats_regex = re.compile("\.png|\.jpg|\.jpeg|\.gif|picture:")  # Regex to find images.
 
 
-def is_title_or_etc(text: str, min_token: int = 5, max_token: int = 600) -> bool:
+def _is_title_or_etc(text: str, min_token: int = 5, max_token: int = 600) -> bool:
     """
     determining if a paragraph is title or information of the book.
     IMPORTANT: if you don't want the text to be tokenize, just put min_token = -1.
@@ -40,7 +40,7 @@ def is_title_or_etc(text: str, min_token: int = 5, max_token: int = 600) -> bool
     return False
 
 
-def is_table(text: str) -> bool:
+def _is_table(text: str) -> bool:
     """
     determining if a paragraph is a table or catalog.
     :rtype: bool
@@ -56,7 +56,7 @@ def is_table(text: str) -> bool:
         return True  # mostly catalogs and etc.
 
 
-def is_image(text: str) -> bool:
+def _is_image(text: str) -> bool:
     """
     determining if a paragraph is for mentioning an image.
     :param text: Raw paragraph.
@@ -65,7 +65,7 @@ def is_image(text: str) -> bool:
     return bool(re.search(image_formats_regex, text.lower()))
 
 
-def is_footnote(text: str) -> bool:
+def _is_footnote(text: str) -> bool:
     """
     determining if a paragraph is the footnote of the book.
     :rtype: bool
@@ -79,11 +79,7 @@ def is_footnote(text: str) -> bool:
     return bool(re.search(footnote_notation_regex, txt))  # if a line starts with {...} it might be a footnote.
 
 
-print(is_footnote("""     [0] The country-seat of Bishop Shipley, the good bishop,
-         as Dr. Franklin used to style him.--B."""))
-
-
-def is_books_copy(text: str) -> bool:
+def _is_books_copy(text: str) -> bool:
     """
     determining if a paragraph indicates the number of copies of this book.
     :rtype: bool
@@ -95,7 +91,7 @@ def is_books_copy(text: str) -> bool:
     return False
 
 
-def is_email_init(text: str) -> bool:
+def _is_email_init(text: str) -> bool:
     """
     determining if a paragraph includes an Email.
     :rtype: bool

@@ -94,7 +94,7 @@ LEGALESE_START_MARKERS = frozenset(("<<THIS ELECTRONIC VERSION OF",))
 LEGALESE_END_MARKERS = frozenset(("SERVICE THAT CHARGES FOR DOWNLOAD",))
 
 
-def strip_headers(text):
+def _strip_headers(text):
     """Remove lines that are part of the Project Gutenberg header or footer.
     Note: The original version of the code can be found at:
     https://github.com/c-w/gutenberg/blob/master/gutenberg/cleanup/strip_headers.py

@@ -1,8 +1,8 @@
 Metadata-Version: 1.1
 Name: gutenberg-cleaner
-Version: 0.0.1
+Version: 0.1.3
 Summary: cleans gutenberg dataset books
-Home-page: UNKNOWN
+Home-page: https://github.com/kiasar/gutenberg_cleaner
 Author: UNKNOWN
 Author-email: mohsenikiasari@ce.sharif.edu
 License: MIT
@@ -51,7 +51,7 @@ Description: ![](https://i.ibb.co/sCJXhmz/header-sp.png)
         This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
         
 Platform: UNKNOWN
-Classifier: Programming language :: Python :: 3
-Classifier: Programming language :: Python :: 3.6
-Classifier: Programming language :: Python :: 3.7
-Classifier: Operation System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
