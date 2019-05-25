@@ -1,0 +1,7 @@
+README.md
+setup.py
+gutenberg_cleaner.egg-info/PKG-INFO
+gutenberg_cleaner.egg-info/SOURCES.txt
+gutenberg_cleaner.egg-info/dependency_links.txt
+gutenberg_cleaner.egg-info/requires.txt
+gutenberg_cleaner.egg-info/top_level.txt
