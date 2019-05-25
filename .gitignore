@@ -152,6 +152,7 @@ htmlcov/
 .coverage
 .coverage.*
 .cache
+.egg-info
 nosetests.xml
 coverage.xml
 *.cover
