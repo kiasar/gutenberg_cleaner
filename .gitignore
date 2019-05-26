@@ -246,6 +246,7 @@ dmypy.json
 
 /*.egg-info
 /*.egg
+.idea/
 .idea
 
 # End of https://www.gitignore.io/api/linux,python,pycharm+all
