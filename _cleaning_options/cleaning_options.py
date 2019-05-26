@@ -72,7 +72,6 @@ def _is_footnote(text: str) -> bool:
     :return: Boolean, True if it is the footnote of the book.
     """
     txt = text.strip()
-    print(txt)
     if "footnote" in txt.lower() and len(txt.replace(" ", "")) < 50:
         return True
     return bool(re.search(footnote_notation_regex, txt))  # if a line starts with {...} it might be a footnote.

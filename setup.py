@@ -6,7 +6,7 @@ with open('README.md') as f:
 setup(
     name="gutenberg_cleaner",
     install_requires=['nltk'],
-    version='0.1.4',
+    version='0.1.5',
     description="cleans gutenberg dataset books",
     author_email='mohsenikiasari@ce.sharif.edu',
     packages=["_cleaning_options"],
