@@ -17,7 +17,7 @@ def simple_cleaner(book: str) -> str:
 def super_cleaner(book: str, min_token: int = 5, max_token: int = 600) -> str:
     """
     Super clean the book (titles, footnotes, images, book information, etc.). may delete some good lines too.
-    ^_^ Do you have a comment to make it better? Email to mohsenikiasari@ce.sharif.edu ^_^.
+    ^_^ Do you have a comment to make it better? make an issue here: https://github.com/kiasar/gutenberg_cleaner ^_^.
     IMPORTANT: if you don't want the text to be tokenize, just put min_token = -1.
     :rtype: str
     :param book: str of a gutenberg's book.
