@@ -9,7 +9,7 @@ def simple_cleaner(book: str) -> str:
     Doesnt go deeply in the text to remove other things like titles or footnotes or etc...
     :rtype: str
     :param book: str of a gutenberg's book
-    :return: str of the book without the lines that are part of the Project Gutenberg header or footer.
+    :return: str of the book without the lines that are part of the Project Gutenberg header and footer.
     """
     return _strip_headers(book)
 
