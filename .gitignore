@@ -133,6 +133,19 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.installed.cfg
+bin
+develop-eggs
+dist
+downloads
+eggs
+parts
+src/*.egg-info
+lib
+lib64
+.idea/
+**/.idea/
+.idea/*
 MANIFEST
 
 # PyInstaller
