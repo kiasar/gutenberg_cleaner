@@ -244,4 +244,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+/*.egg-info
+/*.egg
+.idea
+
 # End of https://www.gitignore.io/api/linux,python,pycharm+all
