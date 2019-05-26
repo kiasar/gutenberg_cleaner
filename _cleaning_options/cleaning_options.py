@@ -33,8 +33,6 @@ def _is_title_or_etc(text: str, min_token: int = 5, max_token: int = 600) -> boo
         return True
     if txt.count(":") > 3 and 2 * txt.count(":") - txt.count("\"") > 3:
         return True  # mostly information about the book.
-    if txt.count("   ") > 3 or txt.count("\t") > 2 or txt.count("*") > 3 or txt.count("=") > 2:
-        return True  # mostly tables and catalogs and etc.
     if "@" in txt and len(txt) < 100:
         return True
     return False
