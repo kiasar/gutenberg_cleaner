@@ -33,7 +33,8 @@ def _is_title_or_etc(text: str, min_token: int = 5, max_token: int = 600) -> boo
         return True
     if txt.count(":") > 3 and 2 * txt.count(":") - txt.count("\"") > 3:
         return True  # mostly information about the book.
-    if "@" in txt and len(txt) < 100:
+    if ("@" in txt and len(txt) < 100) or ('printed in' in txt.lower() and len(txt) < 200) or "inc." in txt.lower() \
+            or ('original title' in txt.lower() and len(txt) < 200):
         return True
     return False
 
