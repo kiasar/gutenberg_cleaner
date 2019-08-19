@@ -1,3 +1,4 @@
+import re
 from _cleaning_options.cleaning_options import _is_title_or_etc, _is_books_copy, \
     _is_email_init, _is_footnote, _is_image, _is_table
 from _cleaning_options.strip_headers import _strip_headers
@@ -37,6 +38,7 @@ def super_cleaner(book: str, min_token: int = 5, max_token: int = 600, mark_dele
             if mark_deletions:
                 paragraphs_after_cleaning.append("[deleted]")  # if the paragraph is not good, replace it with [deleted]
         else:
+            par = re.sub("(\\n)+", " ", par).replace("_", "")
             paragraphs_after_cleaning.append(par)
 
     cleaned_book = "\n\n".join(paragraphs_after_cleaning)  # joining the list of paragraphs into one string
