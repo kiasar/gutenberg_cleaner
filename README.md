@@ -17,6 +17,9 @@ nltk package
 ## How to use it?
 
 it has two methods called "simple_cleaner" and "super_cleaner".
+```
+from gutenberg_cleaner import simple_cleaner, super_cleaner
+```
 ### simple_claner:
 Just removes lines that are part of the Project Gutenberg header or footer.
 Doesnt go deeply in the text to remove other things like titles or footnotes or etc...
