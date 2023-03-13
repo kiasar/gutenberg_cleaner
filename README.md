@@ -1,4 +1,5 @@
 [![Downloads](https://static.pepy.tech/badge/gutenberg-cleaner)](https://pepy.tech/project/gutenberg-cleaner)
+[![Downloads](https://static.pepy.tech/badge/gutenberg-cleaner/month)](https://pepy.tech/project/gutenberg-cleaner)
 
 
 # gutenberg-cleaner
