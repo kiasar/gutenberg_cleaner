@@ -1,4 +1,5 @@
-![](https://i.ibb.co/sCJXhmz/header-sp.png)
+[![Downloads](https://static.pepy.tech/badge/gutenberg-cleaner)](https://pepy.tech/project/gutenberg-cleaner)
+
 ![](https://img.shields.io/apm/l/vim-mode.svg)
 
 
