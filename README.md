@@ -4,7 +4,7 @@
 
 # gutenberg-cleaner
 
-a python package for cleaning Gutenberg books and dataset.
+A python package for cleaning Gutenberg books and dataset.
 
 ### Prerequisites
 nltk package
