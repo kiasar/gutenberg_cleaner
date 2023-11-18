@@ -1,3 +1,4 @@
+import re
 from _cleaning_options.cleaning_options import _is_title_or_etc, _is_books_copy, \
     _is_email_init, _is_footnote, _is_image, _is_table
 from _cleaning_options.strip_headers import _strip_headers
@@ -14,7 +15,7 @@ def simple_cleaner(book: str) -> str:
     return _strip_headers(book)
 
 
-def super_cleaner(book: str, min_token: int = 5, max_token: int = 600) -> str:
+def super_cleaner(book: str, min_token: int = 5, max_token: int = 600, mark_deletions: bool = True) -> str:
     """
     Super clean the book (titles, footnotes, images, book information, etc.). may delete some good lines too.
     ^_^ Do you have a comment to make it better? make an issue here: https://github.com/kiasar/gutenberg_cleaner ^_^.
@@ -34,8 +35,10 @@ def super_cleaner(book: str, min_token: int = 5, max_token: int = 600) -> str:
     for par in paragraphs:
         if _is_image(par) or _is_footnote(par) or _is_email_init(par) or \
                 _is_books_copy(par) or _is_table(par) or _is_title_or_etc(par, min_token, max_token):
-            paragraphs_after_cleaning.append("[deleted]")  # if the paragraph is not good , replace it with [deleted]
+            if mark_deletions:
+                paragraphs_after_cleaning.append("[deleted]")  # if the paragraph is not good, replace it with [deleted]
         else:
+            par = re.sub("(\\n)+", " ", par).replace("_", "")
             paragraphs_after_cleaning.append(par)
 
     cleaned_book = "\n\n".join(paragraphs_after_cleaning)  # joining the list of paragraphs into one string
