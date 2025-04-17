@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="/logo.png" alt="Hyperspherical Python Package" width="250"/>
+  <img src="/logo.png" alt="Gutenberg books and dataset cleaner Python Package" width="250"/>
 </div>
 
 # gutenberg-cleaner
