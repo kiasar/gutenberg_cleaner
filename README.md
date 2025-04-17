@@ -1,8 +1,10 @@
-[![Downloads](https://static.pepy.tech/badge/gutenberg-cleaner)](https://pepy.tech/project/gutenberg-cleaner)
-[![Downloads](https://static.pepy.tech/badge/gutenberg-cleaner/month)](https://pepy.tech/project/gutenberg-cleaner)
-
+<div align="center">
+  <img src="/logo.png" alt="Hyperspherical Python Package" width="250"/>
+</div>
 
 # gutenberg-cleaner
+[![Downloads](https://static.pepy.tech/badge/gutenberg-cleaner)](https://pepy.tech/project/gutenberg-cleaner)
+[![Downloads](https://static.pepy.tech/badge/gutenberg-cleaner/month)](https://pepy.tech/project/gutenberg-cleaner)
 
 A python package for cleaning Gutenberg books and dataset.
 
