@@ -12,25 +12,25 @@ A python package for cleaning Gutenberg books and dataset.
 nltk package
 
 ### Installing
-```
+```console
 [sudo] pip install gutenberg-cleaner
 ```
 
 ## How to use it?
 
 it has two methods called "simple_cleaner" and "super_cleaner".
-```
+```python
 from gutenberg_cleaner import simple_cleaner, super_cleaner
 ```
 ### simple_claner:
 Just removes lines that are part of the Project Gutenberg header or footer.
 Doesnt go deeply in the text to remove other things like titles or footnotes or etc...
-```
+```python
 simple_cleaner(book: str) -> str
 ```
 ### super_cleaner:
 Super clean the book (titles, footnotes, images, book information, etc.). may delete some good lines too.
-```
+```python
 super_cleaner(book: str, min_token: int = 5, max_token: int = 600) -> str
 ```
 min_token: The minimum tokens of a paragraph that is not "dialog" or "quote", -1 means don't tokenize the txt (so it will be faster, but less efficient cleaning).
